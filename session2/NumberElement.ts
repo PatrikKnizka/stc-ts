@@ -5,7 +5,7 @@ class NumberElement {
     public element: number;
     public parity: Boolean;
 
-    public divisibleBy: number[] = [];
+    public divisibleBy: Array<number> = [];
     public primeNumber: boolean = false;
     
     constructor(_element: number){

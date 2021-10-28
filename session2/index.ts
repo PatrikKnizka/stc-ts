@@ -22,14 +22,13 @@ let session2_Dependencies: Depencencies = {
 };
 
 
-
 let myNumbers: NumberElement[] = []
 
 let allNumbers: string = "";
 let primeNumbers: string = "";
 let parityTrueNumbers: string = "";
 let parityFalseNumbers: string = "";
-let divisibleBy: string[] = ["", "", "", "", "", "", "", "", ""];
+let divisibleBy: Array<string> = ["", "", "", "", "", "", "", "", ""];
 
 // Generating random numbers, and creating objects with our pre-defined class NumberElement
 for(let i = 0; i < session2_Dependencies.NUMS_NUM; i++) {
@@ -45,7 +44,7 @@ myNumbers.forEach(myNumbersElement => {
         // Adding the number to string parityTrueNumbers
         parityTrueNumbers = addNumberToString(parityTrueNumbers, myNumbersElement.element);
         
-        // Dealing with divisibleBy part of assignment
+        // Dealing with divisibleBy part of an assignment
         divisibleBy.forEach((element, index) => {
             if(myNumbersElement.divisibleBy.indexOf(index + 1) > - 1) {
                 divisibleBy[index] = addNumberToString(divisibleBy[index], myNumbersElement.element);
